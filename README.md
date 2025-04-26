@@ -11,8 +11,6 @@
   <a href="#features">Features</a> •
   <a href="#installation--update">Installation</a> •
   <a href="#uninstall">Uninstall</a> •
-  <a href="#faq">FAQ</a> •
-  <a href="#disclaimer">Disclaimer</a>
 </p>
 
 <h1 id="requirements">Requirements</h1>
@@ -27,7 +25,6 @@
 - **Blocks all banner, video, and audio ads** in the client
 - **Hiding podcasts, episodes, and audiobooks** from the homepage (optional)
 - **Block Spotify automatic updates** (optional)
-- **More experimental features have been activated** ([see the full list](https://github.com/realfix-dev/Spofix/discussions/50))
 - **Disabled Sentry's console log/error/warning messages** to Spotify developers, halted user interaction logging, and performed code minification
 
 <h1 id="installation--update">Installation / Update</h1>
@@ -97,9 +94,6 @@ iex "& { $(iwr -useb 'https://realfix-dev.github.io/run.ps1') } -m -v 1.2.13.661
   
   - New theme activated (new right and left sidebar, some cover change)
   - Hiding podcasts/episodes/audiobooks from the homepage
-  - Activated [static theme](https://github.com/realfix-dev/Spofix/discussions/50#discussioncomment-4096066) <kbd>spotify</kbd> for lyrics
-  - Hiding [ad-like sections](https://github.com/realfix-dev/Spofix/discussions/50#discussioncomment-4478943)
-  - All [experimental features](https://github.com/realfix-dev/Spofix/discussions/50) included
   - Removal of Spotify MS if it was found 
   - Installation of the recommended version of Spotify (if another client has already been found, it will be installed over) 
   - Blocking of Spotify updates
