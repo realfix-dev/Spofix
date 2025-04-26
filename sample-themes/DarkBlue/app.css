@@ -1,0 +1,86 @@
+/* DarkBlue Theme for Spotify */
+
+:root {
+  --background-base: #0A0A24;
+  --background-highlight: #111133;
+  --background-press: #1A1A44;
+  --background-elevated-base: #15153A;
+  --background-elevated-highlight: #1C1C48;
+  --background-elevated-press: #22224F;
+  --background-tinted-base: #0F0F2A;
+  --background-tinted-highlight: #161636;
+  --background-tinted-press: #22224F;
+  --background-unsafe-for-small-text-base: #3060BF;
+  --background-unsafe-for-small-text-highlight: #4070CF;
+  --background-unsafe-for-small-text-press: #2050AF;
+  --text-base: #FFFFFF;
+  --text-subdued: #B4B4FF;
+  --text-bright-accent: #3060BF;
+  --text-negative: #FF5566;
+  --text-warning: #FFAA44;
+  --text-positive: #66CCBB;
+  --text-announcement: #3060BF;
+  --essential-base: #FFFFFF;
+  --essential-subdued: #B4B4FF;
+  --essential-bright-accent: #3060BF;
+  --essential-negative: #FF5566;
+  --essential-warning: #FFAA44;
+  --essential-positive: #66CCBB;
+  --essential-announcement: #3060BF;
+  --decorative-base: #FFFFFF;
+  --decorative-subdued: #B4B4FF;
+}
+
+/* Main Elements */
+body {
+  background-color: var(--background-base);
+  color: var(--text-base);
+}
+
+/* Sidebar */
+.Root__nav-bar {
+  background-color: var(--background-elevated-base);
+}
+
+/* Top bar */
+.main-topBar-background {
+  background-color: var(--background-elevated-base) !important;
+}
+
+/* Player bar */
+.main-nowPlayingBar-container {
+  background-color: var(--background-elevated-base);
+}
+
+/* Buttons and interactive elements */
+button, .Button-sc-y0gtbx-0 {
+  color: var(--text-base);
+  background-color: var(--background-elevated-highlight);
+}
+
+button:hover, .Button-sc-y0gtbx-0:hover {
+  background-color: var(--background-elevated-press);
+}
+
+/* Play button */
+.main-playButton-PlayButton {
+  background-color: var(--background-unsafe-for-small-text-base);
+}
+
+.main-playButton-PlayButton:hover {
+  background-color: var(--background-unsafe-for-small-text-highlight);
+  transform: scale(1.04);
+}
+
+/* Progress bar */
+.progress-bar {
+  background-color: var(--background-elevated-highlight);
+}
+
+.progress-bar__slider {
+  background-color: var(--background-unsafe-for-small-text-base);
+}
+
+.progress-bar:hover .progress-bar__slider {
+  background-color: var(--background-unsafe-for-small-text-highlight);
+} 
