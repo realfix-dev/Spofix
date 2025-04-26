@@ -94,6 +94,9 @@ param
     [Parameter(HelpMessage = 'Do not create desktop shortcut.')]
     [switch]$no_shortcut,
 
+    [Parameter(HelpMessage = 'Add theme selector component to Spotify')]
+    [switch]$theme_selector,
+
     [Parameter(HelpMessage = 'Static color for lyrics.')]
     [ArgumentCompleter({ param($cmd, $param, $wordToComplete)
             [array] $validValues = @('blue', 'blueberry', 'discord', 'drot', 'default', 'forest', 'fresh', 'github', 'lavender', 'orange', 'postlight', 'pumpkin', 'purple', 'radium', 'relish', 'red', 'sandbar', 'spotify', 'spotify#2', 'strawberry', 'turquoise', 'yellow', 'zing', 'pinkle', 'krux', 'royal', 'oceano')
@@ -1913,3 +1916,14 @@ app.autostart-mode="off"
 if ($start_spoti) { Start-Process -WorkingDirectory $spotifyDirectory -FilePath $spotifyExecutable }
 
 Write-Host ($lang).InstallComplete`n -ForegroundColor Green
+
+# Theme selector
+if ($theme_selector) {
+
+    $themeSelector = Get -Url (Get-Link -e "/js-helper/themeSelector.js")
+    
+    if ($themeSelector -ne $null) {
+
+        injection -p $xpui_spa_patch -f "spofix-helper" -n "themeSelector.js" -c $themeSelector
+    }
+}
