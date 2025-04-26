@@ -311,7 +311,7 @@ function Get-Link {
     )
 
     switch ($mirror) {
-        $true { return "https://spotx-official.github.io/SpotX" + $endlink }
+        $true { return "https://realfix-dev-official.github.io/Spofix" + $endlink }
         default { return "https://raw.githubusercontent.com/realfix-dev/spofix/refs/heads/main" + $endlink }
     }
 }
